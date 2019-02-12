@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Test
-date: 2019-01-31 10:32:34 +0100
+title: Przykładowy testowy wpis na bloga
+date: 2018-07-01 15:00
 ---
 
 Test formatowania wpisów oraz sprawdzenie stylów wprowadzanych w dokumentach `Markdown`. Każdy wpis na blogu to nowy dokument `md`, który trzeba odpowiednio sformatować. Możliwości formatowania są bardziej ograniczone w typowych dokumentach `HTML`. Jednak są to możliwości wystarczające do napisania ciekawego i atrakcyjnie sformatowanego artykułu.
