@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: pl
 title:  Obiekt Application i jego bezczynność
 list-icon: "/assets/images/posts/cat-idle.jpg" 
 date: 2019-01-11 10:32:34 +0100

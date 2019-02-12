@@ -1,0 +1,27 @@
+{%- assign dt = include.date -%}
+{%- if dt -%}
+	{%- assign yy = dt | date: "%Y" | minus: 0 -%}
+	{%- assign mm = dt | date: "%-m" | minus: 0 -%}
+	{%- assign dd = dt | date: "%-d" | minus: 0 -%}
+	{%- if dd>0 and mm>0 and yy>0 -%}
+		{%- case include.lang -%}
+		{%- when 'pl' -%}
+			{{ dd }} {{ site.data.pl.months[mm] }} {{ yy }}
+		{%- when 'eng' -%}
+			{{ dd }} {{ mm }} {{ yy }}
+		{%- else -%}
+			<span style="color:red; background-color: white; font-weight: bold; ">
+				&nbsp; Not supported language &nbsp;
+			</span>	
+		{%- endcase -%}
+	{%- else -%}
+		<span style="color:red; background-color: white; font-weight: bold; ">
+			&nbsp; Date not assigned &nbsp;
+		</span>
+	{%- endif -%}
+
+{%- else -%}
+<span style="color:red; background-color: white; font-weight: bold; ">
+	&nbsp; Invalid date &nbsp;
+</span>
+{%- endif -%}
