@@ -3,5 +3,38 @@
 
 @import "{{ site.theme }}";
 
-.post-content img {float: left; margin: auto 10px;}
-.post-content p {overflow: auto;}
+.post-content img {
+	float: left; 
+	margin: auto 10px;
+}
+.post-content p {
+	overflow: auto;
+}
+.post-content code.highlighter-rouge {
+	background-color: #002040;
+}
+
+.post-content pre.highlight {
+	background-color: #001020;
+	code {
+		span.k {
+			color: white; 
+			font-weight: normal;
+		} // procedure, begin, with, do
+		span.n {
+			color: gold;
+		}  // TForm1, FormCreate, Sender, OnFormReady, TButton, Create
+		span.p {
+
+		} // .():;
+		span.kt {
+
+		} // : TObject
+		span.nb {
+
+		}  // True
+		span.s  {
+			color: lightseagreen;
+		} // 'Button Jeden'
+	}
+}
