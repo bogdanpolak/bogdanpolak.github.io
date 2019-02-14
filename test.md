@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Przykładowy testowy wpis na bloga
+lang: pl
 date: 2018-07-01 15:00
 ---
 

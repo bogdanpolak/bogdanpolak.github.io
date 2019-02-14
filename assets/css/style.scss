@@ -1,14 +1,8 @@
 ---
+# only import scss files stored in _sass folder
+# empty front matter is required
 ---
 
 @import "{{ site.theme }}";
-@import "code-highlighter.scss";
-
-.post-content img {
-	float: left; 
-	margin: auto 10px;
-}
-.post-content p {
-	overflow: auto;
-}
-
+@import "code-highlighter";
+@import "post-images";

@@ -1,0 +1,13 @@
+/*
+    Wyświetlanie obrazków z opływającym je tekstem w postach.
+    * Aby zresetować `float: left;` każdy paragraf musi mieć `overflow: auto;`
+*/
+
+.post-content img {
+	float: left; 
+	margin: auto 10px;
+}
+.post-content p {
+	overflow: auto;
+}
+
