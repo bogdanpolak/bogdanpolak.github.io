@@ -82,6 +82,9 @@ begin
   ReportMemoryLeaksOnShutdown := True;
   OnFormReady := procedure(Sender: TObject)
     begin
+      Counter := 3;
+      Factor := 0.2;
+      WordArray := ['Ala','ma','kota'];
       with TButton.Create(Self) do
       begin
         AlignWithMargins := True;
