@@ -9,12 +9,27 @@ body {
 	body {
 		background-color: lightblue;
 	}
+	.resposive-info::before {
+		content: "small (wd < 576px)";
+	}
+}
+
+.resposive-info {
+	font-size: 30px;
+	background-color: brown;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
+	padding: 0.2em 0;
 }
 
 @media only screen and (min-width: 576px) and  (max-width: 768px) {
 	body {
 		background-color: khaki;
 		width: 576px;
+	}
+	.resposive-info::before {
+		content: "576px";
 	}
 }
 
@@ -23,10 +38,16 @@ body {
 		background-color: lemonchiffon;
 		width: 768px;
 	}
+	.resposive-info::before {
+		content: "768px";
+	}
 }
 
 @media only screen and (min-width:  1000px) {
 	body {
 		width: 1000px;
+	}
+	.resposive-info::before {
+		content: "1000px";
 	}
 }
