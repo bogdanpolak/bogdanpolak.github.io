@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Przykładowy testowy wpis na bloga
 lang: pl
 date: 2018-07-01 15:00
@@ -28,6 +28,7 @@ Długie, pełne łącze HTTP: <https://github.com/bogdanpolak/spring-demos>
 Paragraf nad obrazkiem: Litwo! Ojczyzno moja! Ty jesteś jak zdrowie, Ile cię trzeba cenić, ten tylko się dowie, kto cię stracił. Dziś piękność twą w całej ozdobie widzę i opisuję, bo tęsknię po tobie. Matka Boska, Panno święta, co Jasnej bronisz Częstochowy i w Ostrej świecisz Bramie!  Ty, co gród zamkowy Nowogródzki ochraniasz z jego wiernym ludem! Jak mnie dziecko do zdrowia powróciłaś cudem.
 
 [![Opis obrazka - logo generatora Jekyll]({{ "/assets/images/posts/jekyll-logo.png" | relative_url }} "an image title")](/assets/images/posts/Jekyll__Logo_Full.png)
+
 (kliknij na obrazek aby go powiększyć) Test poniżej obrazka: Litwo! Ojczyzno moja! Ty jesteś jak zdrowie, Ile cię trzeba cenić, ten tylko się dowie, kto cię stracił. Dziś piękność twą w całej ozdobie widzę i opisuję, bo tęsknię po tobie. Matka Boska, Panno święta, co Jasnej bronisz Częstochowy i w Ostrej świecisz Bramie!  Ty, co gród zamkowy Nowogródzki ochraniasz z jego wiernym ludem! Jak mnie dziecko do zdrowia powróciłaś cudem ... 
 
 ## Listy
@@ -97,6 +98,8 @@ begin
 end;
 ```
  
+Drugi przykład:
+
 ```pascal
 // Komentarz Delphi
 { Drugi komentarz }

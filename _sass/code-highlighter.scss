@@ -1,7 +1,8 @@
 $code-background-color: #1A3e4c;
 
-.post-content pre.highlight {
-    background-color: $code-background-color;
+.highlight {
+	background-color: $code-background-color;
+	padding: 0.1em;
 	code {
         background-color: $code-background-color;
 		span.k {

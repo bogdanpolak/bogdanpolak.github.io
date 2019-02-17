@@ -1,3 +1,4 @@
+{%- if layout.navigation -%}
 <header class="site-header">
 	<div class="wrapper">
 		{%- assign default_paths = site.pages | map: "path" -%}
@@ -29,3 +30,4 @@
 		{%- endif -%}
 	</div>
 </header>
+{%- endif -%}
