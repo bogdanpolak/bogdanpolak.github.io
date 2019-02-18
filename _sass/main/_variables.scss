@@ -4,3 +4,32 @@ $screen-breakpoints: (
     medium: 922px,
     large: 1200px
 );
+
+/*
+$highlight-colors: (
+    background: #424142,
+    keyword: #ffb040,  // procedure, begin, with, do
+    identifier: #e9e9e9,  // TForm1, FormCreate, Sender, OnFormReady, TButton, Create
+    symbol: #a0d8ff,  // .():;
+    param-type: #f0e0ff,  // : TObject
+	val-boolean: hotpink,   // True
+	val-number: hotpink,  // numbers (1, 2, 3 ...)
+	val-string: #b0ff98,  // 'Button Jeden'
+    comment-block:  #bbb,
+    comment-1line:  #bbb
+);
+*/
+
+$highlight-colors: (
+    frame-stroke: #ccc,
+    background: #eee,
+    keyword: #008000,  // procedure, begin, with, do
+    identifier: #20212f,  // TForm1, FormCreate, Sender, OnFormReady, TButton, Create
+    symbol: #522,  // .():;
+    param-type: #067,  // : TObject
+	val-boolean: rgb(8, 42, 65),   // True
+	val-number: #052,  // numbers (1, 2, 3 ...)
+	val-string: #c00,  // 'Button Jeden'
+    comment-block:  #888,
+    comment-1line:  #888
+);

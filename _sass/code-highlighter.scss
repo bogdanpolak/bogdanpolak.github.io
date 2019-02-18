@@ -1,10 +1,44 @@
-$code-background-color: #1A3e4c;
-
-.highlight {
-	background-color: $code-background-color;
-	padding: 0.1em;
+pre.highlight {
+	border: 1px solid #{map-get($highlight-colors, "frame-stroke")};
+	background-color: #{map-get($highlight-colors, "background")};
+	margin: 0;
+	padding: 0.3em 0.3em;
 	code {
-        background-color: $code-background-color;
+		background-color: #{map-get($highlight-colors, "background")};
+
+		span.k {
+			color: #{map-get($highlight-colors, "keyword")};
+			font-weight: bold;
+		} 
+		span.n {
+			color: #{map-get($highlight-colors, "identifier")};
+			font-weight: normal;
+		} 
+		span.p {
+			color: #{map-get($highlight-colors, "symbol")};
+			font-weight: bold;
+		} 
+		span.kt {
+			color: #{map-get($highlight-colors, "param-type")};
+			font-weight: normal;
+		} // : TObject
+		span.nb {
+			color: #{map-get($highlight-colors, "val-boolean")};
+		}  // True
+		span.m  {
+			color: #{map-get($highlight-colors, "val-number")};
+		} // numbers (1, 2, 3 ...)
+		span.s  {
+			color: #{map-get($highlight-colors, "val-string")};
+		} // 'Button Jeden'
+        span.cm {
+			color: #{map-get($highlight-colors, "comment-block")};
+        } // comments - block
+        span.c1 {
+			color: #{map-get($highlight-colors, comment-1line)};
+		} // comments - one line
+
+		/*
 		span.k {
 			color: #ffb040;
 			font-weight: bold;
@@ -31,7 +65,8 @@ $code-background-color: #1A3e4c;
 			color: #b0ff98;
 		} // 'Button Jeden'
 		span.cm, span.c1 {
-            color: #bbb;
-        } // comments
-    }
+			color: #bbb;
+		} // comments
+		*/
+	}
 }
