@@ -1,0 +1,44 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.resposive-info {
+	font-size: 30px;
+	background-color: brown;
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
+	padding: 0.2em 0;
+}
+
+body {
+	background-color: lightblue;
+	@include screen-size(small) {
+		background-color: khaki;
+		width: #{map-get($screen-breakpoints, small)};
+	}
+	@include screen-size(medium) {
+		background-color: lemonchiffon;
+		width: #{map-get($screen-breakpoints, medium)};
+	}
+	@include screen-size(large) {
+		background-color: white;
+		width: #{map-get($screen-breakpoints, large)};
+	}
+}
+
+.resposive-info::before {
+	content: "xs: Extra Small";
+	@include screen-size(small) {
+		content: "sm: Small";
+	}
+	@include screen-size(medium) {
+		content: "md: Medium";
+	}
+	@include screen-size(large) {
+		content: "lg: Large";
+	}
+}

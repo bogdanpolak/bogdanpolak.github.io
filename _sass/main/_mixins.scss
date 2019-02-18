@@ -1,0 +1,13 @@
+
+@mixin screen-size ($breakpoint) { 
+    @if map-has-key($screen-breakpoints, $breakpoint) {
+  @media (min-width: #{map-get($screen-breakpoints, $breakpoint)}) {
+      @content;
+  }
+    }
+
+    @else {
+  @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+      + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}
